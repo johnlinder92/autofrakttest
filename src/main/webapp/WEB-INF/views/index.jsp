@@ -4,7 +4,7 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>JavaSpringWebApp</title>
+    <title>Auto Frakt Application</title>
     <meta name="description" content="" />
 
     <spring:url value="/resources/gradients.css" var="gradientsCss" />
@@ -33,8 +33,8 @@
         <nav class="website-nav">
           <ul>
             <li><a class="home-link" href="https://aws.amazon.com/">Home</a></li>
-            <li><a href="https://aws.amazon.com/what-is-cloud-computing/">About</a></li>
-            <li><a href="https://aws.amazon.com/solutions/">Services</a></li>
+            <li><a href="https://aws.amazon.com/what-is-cloud-computing/">New Search</a></li>
+            <li><a href="https://aws.amazon.com/solutions/">Sign in</a></li>
             <li><a href="https://aws.amazon.com/contact-us/">Contact</a></li>
           </ul>
         </nav>
@@ -45,14 +45,14 @@
               <img src="${tweetSvg}" alt="Tweet"/>
           </a>
         <div class="text">
-          <h1>Congratulations!</h1>
-          <h2>You just created a Java Spring web application.</h2>
+          <h1>Wellcome!</h1>
+          <h2>This is the Autofrakt service home page.</h2>
         </div>
       </div>
     </div>
 
     <footer>
-      <p class="footer-contents">Designed and developed with <a href="https://aws.amazon.com/careers/devtools-jobs/">♥</a> in Seattle.</p>
+      <p class="footer-contents">Designed and developed by Krasen <a href="https://aws.amazon.com/careers/devtools-jobs/">♥</a> in Gothenborg.</p>
     </footer>
 
     <script src={$setBackgroundJs}"></script>
