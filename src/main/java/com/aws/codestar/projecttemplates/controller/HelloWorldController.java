@@ -20,9 +20,13 @@ public class HelloWorldController {
 
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView helloWorld() {
-        ModelAndView mav = new ModelAndView("index");
+        ModelAndView mav = new ModelAndView("/index");
         mav.addObject("siteName", this.siteName);
         return mav;
     }
-
+    @RequestMapping("/login")
+    public ModelAndView index(){
+        ModelAndView mav = new ModelAndView("index");
+        return mav;
+    }
 }

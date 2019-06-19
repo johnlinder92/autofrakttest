@@ -22,6 +22,8 @@ public class MvcConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/resources/**").addResourceLocations("/resources/").setCachePeriod(ONE_YEAR);
+        registry.addResourceHandler("/webjars/**").addResourceLocations("/webjars/").setCachePeriod(ONE_YEAR);
+
     }
 
     @Bean
