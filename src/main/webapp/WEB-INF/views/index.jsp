@@ -62,7 +62,8 @@
                     <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#services">Login</a>
+                    <a class="nav-link portfolio-link" data-toggle="modal" href="#loginModel">
+                    Login</a>
                 </li>
             </ul>
         </div>
@@ -309,7 +310,7 @@
         <div class="row">
             <div class="col-sm-4">
                 <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="resources/img/team/1.jpg" alt="">
+                    <img class="mx-auto rounded-circle" src="resources/img/team/john.jpg" alt="">
                     <h4>John Linder</h4>
                     <p class="text-muted">Co-Founder</p>
                     <ul class="list-inline social-buttons">
@@ -501,6 +502,52 @@
     </div>
 </footer>
 
+<!-- Login Modal -->
+<div class="portfolio-modal modal fade" id="loginModel" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="modal-body">
+                            <div class="login-page">
+                                <h2 class="text-uppercase">autofrakt</h2>
+                            <p class="item-intro text-muted">Sign in to your account.<br>If you don't hava an account contact our staff.</p>
+                                <form id="loginForm" name="sentMessage" novalidate="novalidate">
+                                    <div class="row">
+                                        <div class="col-lg-12 text-center">
+                                            <div class="form-group">
+                                                <label for="username"></label><input class="form-control" id="username" type="text" placeholder="Your username *" required="required" data-validation-required-message="Please enter your username.">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password"></label><input class="form-control" id="password" type="tel" placeholder="Your Password *" required="required" data-validation-required-message="Please enter your password.">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-12 text-center">
+                                            <button id="loginButton" class="btn btn-primary text-uppercase" type="submit">Login</button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                                <i class="fas fa-times"></i>
+                                Close Window</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 <!-- Portfolio Modals -->
 
 <!-- Modal 1 -->
