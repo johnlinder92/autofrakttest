@@ -29,4 +29,9 @@ public class HelloWorldController {
         ModelAndView mav = new ModelAndView("index");
         return mav;
     }
+    @RequestMapping("/freightform")
+    public ModelAndView freightform(){
+        ModelAndView mav1 = new ModelAndView("freightform");
+        return mav1;
+    }
 }
