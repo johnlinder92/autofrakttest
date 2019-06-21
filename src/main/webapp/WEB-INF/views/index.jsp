@@ -35,7 +35,7 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
+    <div class="container" style= "margin-right:175;">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><p>AUTOFRAKT</p></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -136,7 +136,7 @@
                             <i class="fas fa-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img class="img-fluid" src="resources/img/portfolio/01-thumbnail.jpg" alt="">
+                    <img class="img-fluid" src="resources/img/portfolio/01-thumbnail.jpg" alt="" style="width:400px; height:260px;">
                 </a>
                 <div class="portfolio-caption">
                     <h4>UPS</h4>
