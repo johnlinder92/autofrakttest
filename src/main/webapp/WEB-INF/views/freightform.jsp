@@ -20,16 +20,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+
+<style>
+    body {
+        margin-left: 20px;
+    }
+</style>
+<br>
 <h2>Vart ska din försändelse åka? </h2>
 <form class="form-inline" action="/actionpage.php">
-    <div class="form-group">
-        <label for="postalfrom">Postkod:</label>
-        <input type="postalfrom" class="form-control" id="postalfrom">
-    </div>
+
+
+        <div class="form-group">
+            <label for="postalfrom">Från: </label>
+            <input type="postalfrom" class="form-control" id="postalfrom" value="17266">
+        </div>
+
     <div class="form-group">
         <label for="postalto">Till postkod:</label>
         <input type="postalto" class="form-control" id="postalto">
     </div>
+    <br>
     <br>
     <h2>Paketinformation: </h2>
 
@@ -39,22 +50,27 @@
 var count=2;
         $( "body" ).on( "click", "button", function() {
             $( this ).after( "<form class=\"form-inline\"><p><div class=\"form-group\">\n" +
-                "        <label for=\"weight\">Vikt i KG:</label>\n" +
-                "        <input type=\"weight\" class=\"form-control\" id=\"weight\">\n" +
+                "        <label for=\"weight1\">Vikt i KG:</label>\n" +
+                "        <input type=\"weight1\" value=\"  \"  class=\"form-control\" id=\"weight1\">\n" +
                 "    </div>\n" +
                 "    <div class=\"form-group\">\n" +
-                "        <label for=\"height\">Höjd(cm)</label>\n" +
-                "        <input type=\"height\" class=\"form-control\" id=\"height\">\n" +
+                "        <label for=\"height1\">Höjd(cm)</label>\n" +
+                "        <input type=\"height1\" class=\"form-control\" id=\"height1\">\n" +
                 "    </div>\n" +
                 "        <div class=\"form-group\">\n" +
-                "            <label for=\"lenght\">Längd(cm)</label>\n" +
-                "            <input type=\"length\" class=\"form-control\" id=\"lenght\">\n" +
+                "            <label for=\"lenght1\">Längd(cm)</label>\n" +
+                "            <input type=\"length1\" class=\"form-control\" id=\"lenght1\">\n" +
                 "        </div>\n" +
                 "        <div class=\"form-group\">\n" +
-                "            <label for=\"width\">Bredd(cm)</label>\n" +
-                "            <input type=\"width\" class=\"form-control\" id=\"width\">\n" +
+                "            <label for=\"width1\">Bredd(cm)</label>\n" +
+                "            <input type=\"width1\" class=\"form-control\" id=\"width1\">\n" +
                 "        </div> Antal paket: " + (count++) +"  </p> </form> " );
+
+
+
         });
+
+
     </script>
 
 
@@ -84,6 +100,7 @@ var count=2;
     </div>
 
 </form>
+<br>
 <br>
 </div>
 </div>
