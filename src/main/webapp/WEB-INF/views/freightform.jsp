@@ -36,23 +36,24 @@
 
     <script>
 
+var count=2;
         $( "body" ).on( "click", "button", function() {
             $( this ).after( "<form class=\"form-inline\"><p><div class=\"form-group\">\n" +
                 "        <label for=\"weight\">Vikt i KG:</label>\n" +
                 "        <input type=\"weight\" class=\"form-control\" id=\"weight\">\n" +
                 "    </div>\n" +
                 "    <div class=\"form-group\">\n" +
-                "        <label for=\"height\">Höjd</label>\n" +
+                "        <label for=\"height\">Höjd(cm)</label>\n" +
                 "        <input type=\"height\" class=\"form-control\" id=\"height\">\n" +
                 "    </div>\n" +
                 "        <div class=\"form-group\">\n" +
-                "            <label for=\"lenght\">Längd</label>\n" +
+                "            <label for=\"lenght\">Längd(cm)</label>\n" +
                 "            <input type=\"length\" class=\"form-control\" id=\"lenght\">\n" +
                 "        </div>\n" +
                 "        <div class=\"form-group\">\n" +
-                "            <label for=\"width\">Bredd</label>\n" +
+                "            <label for=\"width\">Bredd(cm)</label>\n" +
                 "            <input type=\"width\" class=\"form-control\" id=\"width\">\n" +
-                "        </div> </p> </form> " );
+                "        </div> Antal paket: " + (count++) +"  </p> </form> " );
         });
     </script>
 
@@ -64,15 +65,15 @@
         <input type="weight" class="form-control" id="weight">
     </div>
     <div class="form-group">
-        <label for="height">Höjd</label>
+        <label for="height">Höjd(cm)</label>
         <input type="height" class="form-control" id="height">
     </div>
         <div class="form-group">
-            <label for="lenght">Längd</label>
+            <label for="lenght">Längd(cm)</label>
             <input type="length" class="form-control" id="lenght">
         </div>
         <div class="form-group">
-            <label for="width">Bredd</label>
+            <label for="width">Bredd(cm)</label>
             <input type="width" class="form-control" id="width">
         </div>
 
