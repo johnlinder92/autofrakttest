@@ -239,7 +239,7 @@
                                 <h4 class="subheading">Our Humble Beginnings</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">We started this company to help our customers where other fail. We believe in communication and we are ready to follow up with our customers when ever neaded with the soul goal of delivering high customer satisfaction.We are here provide a high quality service!</p>
+                                <p class="text-muted">We started this company to help our customers where others fail. We believe in communication and we're ready to follow up with our customers whenever needed with the sole goal of delivering high customer satisfaction. Our focus is the automation of freight related services. We're here to provide a high quality service!</p>
                             </div>
                         </div>
                     </li>
