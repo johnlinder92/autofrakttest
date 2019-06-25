@@ -77,9 +77,8 @@
 </div>
 <br>
 <br>
-</div>
-</div>
-</form>
+
+
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
                     <button    type="Duplicera/fler paket" class="btn btn-default">Duplicera/fler paket</button>
@@ -91,7 +90,7 @@
 
     var count=2;
     $( "body" ).on( "click", "button", function() {
-        $( this ).after( "<form class=\"form-inline\"><p><div class=\"form-group\">\n" +
+        $( this ).after( "\n" +
             "        <label for=\"weight1\">Vikt i KG:</label>\n" +
             "        <input type=\"weight1\" value=\" " + (document.getElementById("weight").value) +"\"  class=\"form-control\" id=\"weight1\">\n" +
             "    </div>\n" +
@@ -106,7 +105,7 @@
             "        <div class=\"form-group\">\n" +
             "            <label for=\"width1\">Bredd(cm)</label>\n" +
             "            <input type=\"width1\" value=\" " + (document.getElementById("width").value) +"\" class=\"form-control\" id=\"width1\">\n" +
-            "        </div> Antal paket: " + (count++) +"  </p> </form> " );
+            "        </div> Antal paket: " + (count++) +"  </p> " );
 
 
 
@@ -117,6 +116,6 @@
 
 
 
-
+</form>
 </body>
 </html>
