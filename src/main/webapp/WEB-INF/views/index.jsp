@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Autofrakt Web Agency</title>
+    <title>Autofrakt Webbbyrå</title>
 
     <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -35,7 +35,7 @@
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container" style= "margin-right:175;">
+    <div class="container" >
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><p>AUTOFRAKT</p></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
@@ -47,19 +47,19 @@
 
             <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+                    <a class="nav-link js-scroll-trigger" href="#services">Tjänster</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    <a class="nav-link js-scroll-trigger" href="#about">Om oss</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#team">Team</a>
+                    <a class="nav-link js-scroll-trigger" href="#team">Teamet</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link portfolio-link" data-toggle="modal" href="#loginModel">
@@ -74,9 +74,9 @@
 <header class="masthead">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Our focus is the automation of freight related services!</div>
-            <div class="intro-heading text-uppercase">Explore</div>
-            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+            <div class="intro-lead-in">Vårt fokus ligger i automatisering av fraktrelaterade tjänster</div>
+            <div class="intro-heading text-uppercase"></div>
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Mer information</a>
         </div>
     </div>
 </header>
@@ -86,8 +86,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Services</h2>
-                <h3 class="section-subheading text-muted">High Customer satisfaction is our main goal.</h3>
+                <h2 class="section-heading text-uppercase">Vad vi erbjuder</h2>
+                <h3 class="section-subheading text-muted">Vi automatiserar de tjänster som krävs vid frakt.</h3>
             </div>
         </div>
         <div class="row text-center">
@@ -96,24 +96,24 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
-                <h4 class="service-heading">Delivery Consulting</h4>
-                <p class="text-muted">We are here to gide you in the world of delivery so that your customers receive the best service for the best price.</p>
+                <h4 class="service-heading"> Nya Produkter</h4>
+                <p class="text-muted">Vår första produkt är en automatiserad priskoll, kopplat till alla dina fraktbolag.</p>
             </div>
             <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
-                <h4 class="service-heading">Delivery Search Options</h4>
-                <p class="text-muted">Our main and most popular service! We offer you the ability to search and place orders to different delivery providers onw affortable prices.</p>
-            </div>
+                <h4 class="service-heading">Webbbaserat</h4>
+                <p class="text-muted">Våra lösningar finns enkelt åtkomstbara på webben.</p>
+        </div>
             <div class="col-md-4">
           <span class="fa-stack fa-4x">
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
           </span>
-                <h4 class="service-heading">Account nanagement and Tracking</h4>
-                <p class="text-muted">As an extra future we offer you full account management and order tracking for you and your customers.</p>
+                <h4 class="service-heading">Kvalitet</h4>
+                <p class="text-muted">Grundarna till autofrakt har en bakgrund inom kvalitetssäkring därför är det viktigt för oss att kvalitén är på en hög nivå i förhållande till risken. </p>
             </div>
         </div>
     </div>
@@ -124,8 +124,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Example/Portfolio</h2>
-                <h3 class="section-subheading text-muted">Uppcoming Servises</h3>
+                <h2 class="section-heading text-uppercase">Produkter</h2>
+                <h3 class="section-subheading text-muted"></h3>
             </div>
         </div>
         <div class="row">
@@ -222,8 +222,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">About</h2>
-                <h3 class="section-subheading text-muted">Young company that believes in customer service delivered for the best price.</h3>
+                <h2 class="section-heading text-uppercase">Om oss</h2>
+                <h3 class="section-subheading text-muted">Vi är ett ugnt företag grundat av två ambitiösa killar som brinner för systemutveckling och kvalitetssäkring.</h3>
             </div>
         </div>
         <div class="row">
@@ -236,7 +236,7 @@
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>2019</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
+                                <h4 class="subheading">Starten:</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted"></p>
@@ -287,9 +287,9 @@
 <%--                    </li>--%>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <h4>Be Part
-                                <br>Of Our
-                                <br>Story!</h4>
+                            <h4>
+                                <br>
+                                <br></h4>
                         </div>
                     </li>
                 </ul>
@@ -303,8 +303,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                <h3 class="section-subheading text-muted">Our small but dedicated team is here to help you out!</h3>
+                <h2 class="section-heading text-uppercase">Vårt Team</h2>
+                <h3 class="section-subheading text-muted">Vårt lilla men dedikerade team finns här för dig!</h3>
             </div>
         </div>
         <div class="row">
@@ -383,7 +383,7 @@
         </div>
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <p class="large text-muted">Our team members are here to deliver high quality service to all our customers. They are trained and ready to answer your questions. Do not hesitate to contact them..</p>
+                <p class="large text-muted">Kontakta oss nedan</p>
             </div>
         </div>
     </div>
@@ -517,7 +517,7 @@
                         <div class="modal-body">
                             <div class="login-page">
                                 <h2 class="text-uppercase">autofrakt</h2>
-                            <p class="item-intro text-muted">Sign in to your account.<br>If you don't hava an account contact our staff.</p>
+                            <p class="item-intro text-muted">Logga in.<br>Om du inte har ett konto, kontakta oss för att få ett</p>
                                 <form id="loginForm" name="sentMessage" novalidate="novalidate">
                                     <div class="row">
                                         <div class="col-lg-12 text-center">
@@ -532,14 +532,14 @@
                                         </div>
                                         <div class="clearfix"></div>
                                         <div class="col-lg-12 text-center">
-                                            <button id="loginButton" class="btn btn-primary text-uppercase" type="submit">Login</button>
+                                            <button id="loginButton" class="btn btn-primary text-uppercase" type="submit">Logga in</button>
                                         </div>
                                     </div>
                                 </form>
 
                                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                                 <i class="fas fa-times"></i>
-                                Close Window</button>
+                                Stäng fönster</button>
                         </div>
                     </div>
                 </div>
