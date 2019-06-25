@@ -28,11 +28,11 @@
 </style>
 <br>
 <h2>Vart ska din försändelse åka? </h2>
-<form class="form-inline" action="/actionpage.php">
+<form class="form-inline" action="actionpage.php">
 
 
         <div class="form-group">
-            <label for="postalfrom">Från: </label>
+            <label for="postalfrom">DinPostkod:   </label>
             <input type="postalfrom" class="form-control" id="postalfrom" value="17266">
         </div>
 
@@ -45,40 +45,14 @@
     <h2>Paketinformation: </h2>
 
 
-    <script>
 
-var count=2;
-        $( "body" ).on( "click", "button", function() {
-            $( this ).after( "<form class=\"form-inline\"><p><div class=\"form-group\">\n" +
-                "        <label for=\"weight1\">Vikt i KG:</label>\n" +
-                "        <input type=\"weight1\" value=\"  \"  class=\"form-control\" id=\"weight1\">\n" +
-                "    </div>\n" +
-                "    <div class=\"form-group\">\n" +
-                "        <label for=\"height1\">Höjd(cm)</label>\n" +
-                "        <input type=\"height1\" class=\"form-control\" id=\"height1\">\n" +
-                "    </div>\n" +
-                "        <div class=\"form-group\">\n" +
-                "            <label for=\"lenght1\">Längd(cm)</label>\n" +
-                "            <input type=\"length1\" class=\"form-control\" id=\"lenght1\">\n" +
-                "        </div>\n" +
-                "        <div class=\"form-group\">\n" +
-                "            <label for=\"width1\">Bredd(cm)</label>\n" +
-                "            <input type=\"width1\" class=\"form-control\" id=\"width1\">\n" +
-                "        </div> Antal paket: " + (count++) +"  </p> </form> " );
-
-
-
-        });
-
-
-    </script>
 
 
 
 
     <div class="form-group">
         <label for="weight">Vikt i KG:</label>
-        <input type="weight" class="form-control" id="weight">
+        <input  type="weight" class="form-control" id="weight">
     </div>
     <div class="form-group">
         <label for="height">Höjd(cm)</label>
@@ -93,22 +67,54 @@ var count=2;
             <input type="width" class="form-control" id="width">
         </div>
 
-    <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-            <button  type="Hitta billigast pris" class="btn btn-default">Hitta billigast pris</button>
-        </div>
+
+
+
+<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+        <button  type="Hitta billigast pris" class="btn btn-default">Hitta billigast pris</button>
     </div>
-
+</div>
+<br>
+<br>
+</div>
+</div>
 </form>
-<br>
-<br>
-</div>
-</div>
 
-    <div class="form-inline">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-                    <button  type="Duplicera/fler paket" class="btn btn-default">Duplicera/fler paket</button>
-                </div>
+                    <button    type="Duplicera/fler paket" class="btn btn-default">Duplicera/fler paket</button>
+
+
+<script>
+
+
+
+    var count=2;
+    $( "body" ).on( "click", "button", function() {
+        $( this ).after( "<form class=\"form-inline\"><p><div class=\"form-group\">\n" +
+            "        <label for=\"weight1\">Vikt i KG:</label>\n" +
+            "        <input type=\"weight1\" value=\" " + (document.getElementById("weight").value) +"\"  class=\"form-control\" id=\"weight1\">\n" +
+            "    </div>\n" +
+            "    <div class=\"form-group\">\n" +
+            "        <label for=\"height1\">Höjd(cm)</label>\n" +
+            "        <input type=\"height1\" value=\" " + (document.getElementById("height").value) +"\" class=\"form-control\" id=\"height1\">\n" +
+            "    </div>\n" +
+            "        <div class=\"form-group\">\n" +
+            "            <label for=\"lenght1\">Längd(cm)</label>\n" +
+            "            <input type=\"length1\" value=\" " + (document.getElementById("lenght").value) +"\" class=\"form-control\" id=\"lenght1\">\n" +
+            "        </div>\n" +
+            "        <div class=\"form-group\">\n" +
+            "            <label for=\"width1\">Bredd(cm)</label>\n" +
+            "            <input type=\"width1\" value=\" " + (document.getElementById("width").value) +"\" class=\"form-control\" id=\"width1\">\n" +
+            "        </div> Antal paket: " + (count++) +"  </p> </form> " );
+
+
+
+    });
+
+
+</script>
+
 
 
 
