@@ -422,8 +422,8 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading text-uppercase">Contact Us</h2>
-                <h3 class="section-subheading text-muted">We are looking forward to hearing from you!</h3>
+                <h2 class="section-heading text-uppercase">Kontakta oss</h2>
+                <h3 class="section-subheading text-muted">Vi ser fram emot att höra ifrån dig!</h3>
             </div>
         </div>
         <div class="row">
@@ -432,28 +432,28 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="name"></label><input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
+                                <label for="name"></label><input class="form-control" id="name" type="text" placeholder="Ditt namn *" required="required" data-validation-required-message="Skriv in ditt namn.">
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <label for="email"></label><input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
+                                <label for="email"></label><input class="form-control" id="email" type="email" placeholder="Din email *" required="required" data-validation-required-message="Skriv in din email.">
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <label for="phone"></label><input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
+                                <label for="phone"></label><input class="form-control" id="phone" type="tel" placeholder="Ditt telefonnummer *" required="required" data-validation-required-message="Skriv in ditt telefonnummer.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="message"></label><textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                <label for="message"></label><textarea class="form-control" id="message" placeholder="Ditt meddelande *" required="required" data-validation-required-message="Skriv in ditt meddelande."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="clearfix"></div>
                         <div class="col-lg-12 text-center">
                             <div id="success"></div>
-                            <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
+                            <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Skicka meddelande</button>
                         </div>
                     </div>
                 </form>
