@@ -74,8 +74,8 @@
 <header class="masthead">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Welcome To Our Web Agency!</div>
-            <div class="intro-heading text-uppercase">Explore our services</div>
+            <div class="intro-lead-in">Our focus is the automation of freight related services!</div>
+            <div class="intro-heading text-uppercase">Explore</div>
             <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
         </div>
     </div>
@@ -239,7 +239,7 @@
                                 <h4 class="subheading">Our Humble Beginnings</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">We started this company to help our customers where others fail. We believe in communication and we're ready to follow up with our customers whenever needed with the sole goal of delivering high customer satisfaction. Our focus is the automation of freight related services. We're here to provide a high quality service!</p>
+                                <p class="text-muted"></p>
                             </div>
                         </div>
                     </li>
@@ -467,7 +467,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-4">
-                <span class="copyright">Copyright &copy; Your Website 2019</span>
+                <span class="copyright">Copyright &copy; Dinautofrakt.se 2019</span>
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
