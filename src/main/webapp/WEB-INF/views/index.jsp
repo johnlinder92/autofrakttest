@@ -97,7 +97,7 @@
             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
                 <h4 class="service-heading"> Pris</h4>
-                <p class="text-muted">Vår tjänst kostar 2500 SEK per år.</p>
+                <p class="text-muted">Vår tjänst kostar 2500 SEK per år.(Gratis provperiod 2 veckor för nya företagskunder).</p>
             </div>
             <div class="col-md-4">
           <span class="fa-stack fa-4x">
