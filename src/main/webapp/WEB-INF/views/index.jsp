@@ -74,7 +74,7 @@
 <header class="masthead">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Vårt fokus ligger i automatisering av fraktrelaterade tjänster</div>
+            <div class="intro-lead-in">Vi fokuserar på att automatisera dina fraktrelaterade tjänster</div>
             <div class="intro-heading text-uppercase"></div>
             <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Mer information</a>
         </div>
