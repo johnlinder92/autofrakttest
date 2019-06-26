@@ -36,7 +36,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container" >
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><p>AUTOFRAKT</p></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><p>DinAUTOFRAKT</p></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu
             <i class="fas fa-bars"></i>
@@ -47,14 +47,14 @@
 
             <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#services">Tjänster</a>
+                    <a class="nav-link js-scroll-trigger" href="#services">Vår Tjänst</a>
                 </li>
-                <li class="nav-item">
+               <%-- <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="nav-item">
+                </li>--%>
+                <%--<li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about">Om oss</a>
-                </li>
+                </li>--%>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#team">Teamet</a>
                 </li>
@@ -87,7 +87,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Vad vi erbjuder</h2>
-                <h3 class="section-subheading text-muted">Vår tjänst kollar pris på alla dina fraktbolag samtidigt.</h3>
+                <h3 class="section-subheading text-muted">Vår tjänst kollar pris på alla dina fraktbolag samtidigt. - med dina avtal.</h3>
             </div>
         </div>
         <div class="row text-center">
@@ -96,8 +96,8 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
-                <h4 class="service-heading"> onsectetur adipi</h4>
-                <p class="text-muted">olor sit amet, consectetur adipisicing elit. Est blanditiis d.</p>
+                <h4 class="service-heading"> Vår tjänst kostar 2500 SEK per år</h4>
+                <p class="text-muted"></p>
             </div>
             <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -105,7 +105,7 @@
             <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
           </span>
                 <h4 class="service-heading">Webbbaserat</h4>
-                <p class="text-muted">Våra lösningar finns enkelt åtkomstbara på webben.</p>
+                <p class="text-muted">Vår lösning finns enkelt åtkomstbar på webben.</p>
         </div>
             <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -113,11 +113,12 @@
             <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
           </span>
                 <h4 class="service-heading">Kvalitet</h4>
-                <p class="text-muted">Grundarna till autofrakt har en bakgrund inom kvalitetssäkring därför är det viktigt för oss att kvalitén är på en hög nivå i förhållande till risken. </p>
+                <p class="text-muted">Grundarna till autofrakt har en bakgrund inom kvalitetssäkring vilket har säkerställt att produkten fungerar smidigt. </p>
             </div>
         </div>
     </div>
 </section>
+<%--
 
 <!-- Portfolio Grid -->
 <section class="bg-light page-section" id="portfolio">
@@ -216,17 +217,18 @@
         </div>
     </div>
 </section>
+--%>
 
 <!-- About -->
-<section class="page-section" id="about">
+<%--<section class="page-section" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Om oss</h2>
                 <h3 class="section-subheading text-muted">Vi är ett ugnt företag grundat av två ambitiösa killar som brinner för systemutveckling och kvalitetssäkring.</h3>
             </div>
-        </div>
-        <div class="row">
+        </div>--%>
+        <%--<div class="row">
             <div class="col-lg-12">
                 <ul class="timeline">
                     <li>
@@ -242,7 +244,7 @@
                                 <p class="text-muted"></p>
                             </div>
                         </div>
-                    </li>
+                    </li>--%>
 <%--                    <li class="timeline-inverted">--%>
 <%--                        <div class="timeline-image">--%>
 <%--                            <img class="rounded-circle img-fluid" src="resources/img/about/2.jpg" alt="">--%>
@@ -390,7 +392,7 @@
 </section>
 
 <!-- Clients -->
-<section class="py-5">
+<%--<section class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-3 col-sm-6">
@@ -415,7 +417,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>--%>
 
 <!-- Contact -->
 <section class="page-section" id="contact">
@@ -517,7 +519,7 @@
                         <div class="modal-body">
                             <div class="login-page">
                                 <h2 class="text-uppercase">autofrakt</h2>
-                            <p class="item-intro text-muted">Logga in.<br>Om du inte har ett konto, kontakta oss för att få ett</p>
+                            <p class="item-intro text-muted">Logga in.<br>Logga in för att komma åt priskollen. Kontakta oss i formuläret om ni är intresserad</p>
                                 <form id="loginForm" name="sentMessage" novalidate="novalidate">
                                     <div class="row">
                                         <div class="col-lg-12 text-center">
