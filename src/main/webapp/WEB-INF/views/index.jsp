@@ -483,17 +483,17 @@
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
                             <div class="login-page">
-                                <h2 class="text-uppercase">autofrakt</h2>
-                            <p class="item-intro text-muted">Logga in.<br>Logga in för att komma åt priskollen. Kontakta oss i formuläret om ni är intresserad</p>
+                                <h2 class="text-uppercase">autofrakt -Priskollen</h2>
+                            <p class="item-intro text-muted">Logga in.<br>Logga in för att komma åt priskollen, Kontakta oss i formuläret om ni är intresserad.</p>
                                 <form id="loginForm" name="sentMessage" novalidate="novalidate">
                                     <div class="row">
                                         <div class="col-lg-12 text-center">
                                             <div class="form-group">
-                                                <label for="username"></label><input class="form-control" id="username" type="text" placeholder="Your username *" required="required" data-validation-required-message="Please enter your username.">
+                                                <label for="username"></label><input class="form-control" id="username" type="text" placeholder="Ditt användarnamn *" required="required" data-validation-required-message="Please enter your username.">
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                             <div class="form-group">
-                                                <label for="password"></label><input class="form-control" id="password" type="tel" placeholder="Your Password *" required="required" data-validation-required-message="Please enter your password.">
+                                                <label for="password"></label><input class="form-control" id="password" type="tel" placeholder="Ditt lösenord *" required="required" data-validation-required-message="Please enter your password.">
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                         </div>
