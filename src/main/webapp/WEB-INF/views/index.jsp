@@ -314,14 +314,14 @@
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="resources/img/team/john.jpg" alt="">
                     <h4>John Linder</h4>
-                    <p class="text-muted">Co-Founder</p>
+
                 </div>
             </div>
             <div class="col-sm-4">
                 <div class="team-member">
                     <img class="mx-auto rounded-circle" src="resources/img/team/krasen.jpg" alt="">
                     <h4>Krasen Parvanov</h4>
-                    <p class="text-muted">Co-Founder</p>
+                   <%-- <p class="text-muted">Co-Founder</p>--%>
                 </div>
             </div>
 <%--            <div class="col-sm-4">--%>
@@ -351,7 +351,6 @@
         </div>
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <p class="large text-muted">Kontakta oss nedan</p>
             </div>
         </div>
     </div>
