@@ -96,8 +96,8 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
-                <h4 class="service-heading"> Vår tjänst kostar 2500 SEK per år</h4>
-                <p class="text-muted"></p>
+                <h4 class="service-heading"> Pris</h4>
+                <p class="text-muted">Vår tjänst kostar 2500 SEK per år.</p>
             </div>
             <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -315,23 +315,6 @@
                     <img class="mx-auto rounded-circle" src="resources/img/team/john.jpg" alt="">
                     <h4>John Linder</h4>
                     <p class="text-muted">Co-Founder</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
             <div class="col-sm-4">
@@ -339,23 +322,6 @@
                     <img class="mx-auto rounded-circle" src="resources/img/team/krasen.jpg" alt="">
                     <h4>Krasen Parvanov</h4>
                     <p class="text-muted">Co-Founder</p>
-                    <ul class="list-inline social-buttons">
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
                 </div>
             </div>
 <%--            <div class="col-sm-4">--%>
@@ -471,7 +437,7 @@
             <div class="col-md-4">
                 <span class="copyright">Copyright &copy; Dinautofrakt.se 2019</span>
             </div>
-            <div class="col-md-4">
+           <%-- <div class="col-md-4">
                 <ul class="list-inline social-buttons">
                     <li class="list-inline-item">
                         <a href="#">
@@ -489,7 +455,7 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+            </div>--%>
             <div class="col-md-4">
                 <ul class="list-inline quicklinks">
                     <li class="list-inline-item">
