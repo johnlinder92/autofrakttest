@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Autofrakt Webbbyrå</title>
+    <title>Autofrakt.se</title>
 
     <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -74,7 +74,7 @@
 <header class="masthead">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Vi fokuserar på att automatisera dina fraktrelaterade tjänster</div>
+            <div class="intro-lead-in">Vi automatiserar priskoll vid frakt.</div>
             <div class="intro-heading text-uppercase"></div>
             <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Mer information</a>
         </div>
@@ -87,7 +87,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Vad vi erbjuder</h2>
-                <h3 class="section-subheading text-muted">Vi automatiserar de tjänster som krävs vid frakt.</h3>
+                <h3 class="section-subheading text-muted">Vår tjänst kollar pris på alla dina fraktbolag samtidigt.</h3>
             </div>
         </div>
         <div class="row text-center">
@@ -96,8 +96,8 @@
             <i class="fas fa-circle fa-stack-2x text-primary"></i>
             <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
           </span>
-                <h4 class="service-heading"> Nya Produkter</h4>
-                <p class="text-muted">Vår första produkt är en automatiserad priskoll, kopplat till alla dina fraktbolag.</p>
+                <h4 class="service-heading"> onsectetur adipi</h4>
+                <p class="text-muted">olor sit amet, consectetur adipisicing elit. Est blanditiis d.</p>
             </div>
             <div class="col-md-4">
           <span class="fa-stack fa-4x">
