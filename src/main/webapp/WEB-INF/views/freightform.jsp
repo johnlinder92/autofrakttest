@@ -84,31 +84,45 @@
 
 
 
-    var count=2;
-    $( "body" ).on( "click", "button", function() {
-        $( this ).after( "\n" +
-            "        <label for=\"weight1\">Vikt i KG:</label>\n" +
-            "        <input type=\"weight1\" value=\" " + (document.getElementById("weight").value) +"\"  class=\"form-control\" id=\"weight1\">\n" +
-            "    </div>\n" +
-            "    <div class=\"form-group\">\n" +
-            "        <label for=\"height1\">Höjd(cm)</label>\n" +
-            "        <input type=\"height1\" value=\" " + (document.getElementById("height").value) +"\" class=\"form-control\" id=\"height1\">\n" +
-            "    </div>\n" +
-            "        <div class=\"form-group\">\n" +
-            "            <label for=\"lenght1\">Längd(cm)</label>\n" +
-            "            <input type=\"length1\" value=\" " + (document.getElementById("lenght").value) +"\" class=\"form-control\" id=\"lenght1\">\n" +
-            "        </div>\n" +
-            "        <div class=\"form-group\">\n" +
-            "            <label for=\"width1\">Bredd(cm)</label>\n" +
-            "            <input type=\"width1\" value=\" " + (document.getElementById("width").value) +"\" class=\"form-control\" id=\"width1\">\n" +
-            "        </div> Antal paket: " + (count++) +"  </p> " );
 
 
 
-    });
+   $( "body" ).on( "click", "button", function() {
+   $( this ).after( "\n" +
+       "        <label for=\"weight1\">Vikt i KG:</label>\n" +
+       "        <input type=\"weight1\" value=\" " + (document.getElementById("weight").value) +"\"  class=\"form-control\" id=\"weight1\">\n" +
+       "    </div>\n" +
+       "    <div class=\"form-group\">\n" +
+       "        <label for=\"height1\">Höjd(cm)</label>\n" +
+       "        <input type=\"height1\" value=\" " + (document.getElementById("height").value) +"\" class=\"form-control\" id=\"height1\">\n" +
+       "    </div>\n" +
+       "        <div class=\"form-group\">\n" +
+       "            <label for=\"lenght1\">Längd(cm)</label>\n" +
+       "            <input type=\"length1\" value=\" " + (document.getElementById("lenght").value) +"\" class=\"form-control\" id=\"lenght1\">\n" +
+       "        </div>\n" +
+       "        <div class=\"form-group\">\n" +
+       "            <label for=\"width1\">Bredd(cm)</label>\n" +
+       "            <input type=\"width1\" value=\" " + (document.getElementById("width").value) +"\" class=\"form-control\" id=\"width1\">\n" +
+       "        </div>  " + "  </p> " );
+   });
 
 
 </script>
+    <p id="counter"> Totala antalet paket = 1</p>
+<script>
+
+
+    var count= 2;
+
+    $( "body" ).on( "click", "button", function() {
+        $(this)("\n" + "" +
+            (document.getElementById("counter").innerHTML = "Totala antalet paket = " + count++) + ""
+        );
+
+    });
+
+</script>
+
 
 
 
