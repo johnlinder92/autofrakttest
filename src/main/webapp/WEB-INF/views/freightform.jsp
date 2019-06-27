@@ -80,10 +80,6 @@
 
 
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-                    <button    type="Duplicera/fler paket" class="btn btn-default">Duplicera/fler paket</button>
-
-
 <script>
 
 
@@ -117,5 +113,13 @@
 
 
 </form>
+
+
+
+        <div class="form-inline">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<button  style="margin-right:1400px; margin-bottom:25px " type="Duplicera/fler paket" class="btn btn-default">Duplicera/fler paket</button>
+</div>
+<br>
 </body>
 </html>
