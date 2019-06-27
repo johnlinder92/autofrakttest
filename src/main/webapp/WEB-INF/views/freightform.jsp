@@ -22,6 +22,11 @@
 <body>
 
 <style>
+    hr {
+        border-top: 2px solid #333;
+
+
+    }
     body {
         margin-left: 20px;
     }
@@ -103,7 +108,7 @@
        "        <div class=\"form-group\">\n" +
        "            <label for=\"width1\">Bredd(cm)</label>\n" +
        "            <input type=\"width1\" value=\" " + (document.getElementById("width").value) +"\" class=\"form-control\" id=\"width1\">\n" +
-       "        </div>  " + "  </p> " );
+       "        </div> \ <hr> \   </p> " );
    });
 
 
