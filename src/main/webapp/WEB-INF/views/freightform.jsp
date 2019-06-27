@@ -38,42 +38,32 @@
 
         <div class="form-group">
             <label for="postalfrom">DinPostkod:   </label>
-            <input type="postalfrom" class="form-control" id="postalfrom" value="17266">
+            <input type="postalfrom" class="form-control"  placeholder="postkod" id="postalfrom" value="17266">
         </div>
 
     <div class="form-group">
         <label for="postalto">Till postkod:</label>
-        <input type="postalto" class="form-control" id="postalto">
+        <input type="postalto" class="form-control"  placeholder="postkod" id="postalto">
     </div>
     <br>
     <br>
     <h2>Paketinformation: </h2>
-
-
-
-
-
-
-
     <div class="form-group">
         <label for="weight">Vikt i KG:</label>
-        <input  type="weight" class="form-control" id="weight">
+        <input  type="weight" class="form-control" placeholder="Vikt i kg" id="weight">
     </div>
     <div class="form-group">
         <label for="height">Höjd(cm)</label>
-        <input type="height" class="form-control" id="height">
+        <input type="height" class="form-control"  placeholder="Höjd i cm" id="height">
     </div>
         <div class="form-group">
             <label for="lenght">Längd(cm)</label>
-            <input type="length" class="form-control" id="lenght">
+            <input type="length" class="form-control" placeholder="Längd i cm" id="lenght">
         </div>
         <div class="form-group">
             <label for="width">Bredd(cm)</label>
-            <input type="width" class="form-control" id="width">
+            <input type="width" class="form-control" placeholder="Bredd i cm" id="width">
         </div>
-
-
-
 
 <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
