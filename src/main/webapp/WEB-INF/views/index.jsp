@@ -74,7 +74,7 @@
 <header class="masthead">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-lead-in">Vi automatiserar priskoll vid frakt.</div>
+            <div class="intro-lead-in">Din priskoll vid frakt</div>
             <div class="intro-heading text-uppercase"></div>
             <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Mer information</a>
         </div>
@@ -87,7 +87,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Vad vi erbjuder</h2>
-                <h3 class="section-subheading text-muted">Vår tjänst kollar pris på alla dina fraktbolag samtidigt. - med dina avtal.</h3>
+                <h3 class="section-subheading text-muted">Vår tjänst kollar pris på alla dina fraktbolag samtidigt. - med dina avtal. När du sedan ska boka följer informationen med till fraktbolagshemsidan du valt, för att spara din tid.</h3>
             </div>
         </div>
         <div class="row text-center">
@@ -390,9 +390,12 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading text-uppercase">Kontakta oss</h2>
-                <h3 class="section-subheading text-muted">Vi ser fram emot att höra ifrån dig!</h3>
+                <h3 class="section-subheading text-muted">Går även bra att mejla till info@dinautofrakt.se </h3>
             </div>
         </div>
+
+
+
         <div class="row">
             <div class="col-lg-12">
                 <form id="contactForm" name="sentMessage" novalidate="novalidate">
