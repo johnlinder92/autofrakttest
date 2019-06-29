@@ -33,46 +33,30 @@
     <link href="resources/css/agency.min.css" rel="stylesheet">
 
 </head>
-<body>
+
+<body id="page-top">
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container" >
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><p>DinAUTOFRAKT</p></a>
+
+        <a id="loggaut" class="navbar-brand js-scroll-trigger" href="#page-top"><p>Logga ut</p></a>
+
+
+
+    </div>
+</nav>
+
 <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container" >
-            <a class="navbar-brand js-scroll-trigger" href="#page-top"><p>DinAUTOFRAKT</p></a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
+<header class="masthead">
+    <div class="container">
+        <div class="intro-text">
+            <div class="intro-lead-in">Din priskoll vid frakt</div>
 
-
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-
-                <ul class="navbar-nav text-uppercase ml-auto">
-
-                    <%-- <li class="nav-item">
-                         <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
-                     </li>--%>
-                    <%--<li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">Om oss</a>
-                    </li>--%>
-
-                    <li class="nav-item">
-                        <a class="nav-link portfolio-link" data-toggle="modal" href="#loginModel">
-                            Logga ut</a>
-                    </li>
-                </ul>
-            </div>
         </div>
-    </nav>
-
-
-    <header class="masthead">
-        <div class="container">
-            <div style="padding-top: 200px" class="intro-text">
-                <div class="intro-lead-in">Din priskoll vid frakt</div>
-
-            </div>
-        </div>
-    </header>
+    </div>
+</header>
 
 
 
@@ -82,6 +66,22 @@
 
 <style>
 
+    .intro-text {
+        padding-top: 200px
+        !important;
+    }
+
+    @media (max-width: 1000px){
+        .fixed-top{
+            position:relative;
+        }
+
+    }
+
+    .a loggaut{
+
+        float: right;
+    }
 
 
     label{
@@ -107,7 +107,7 @@
 
 <form link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" class="form-inline">
 
-     <span> <h2 style="margin-right:35px">Vart ska din försändelse åka? </h2></span>
+     <span> <h2 id="ner" style="margin-right:35px">Vart ska din försändelse åka? </h2></span>
     <div class="clear"></div>
 <br/>
 
@@ -168,8 +168,9 @@
 
 </script>
 
-<!-- Footer -->
-
+<script src="resources/vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="resources/js/agency.min.js"></script>
 
 </body>
+
 </html>
