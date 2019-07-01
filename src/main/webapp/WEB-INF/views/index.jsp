@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-
+    <meta name="google-site-verification" content="M1OB9GOGq5_W3By5RzoKxXdeURqtnpv8xEK5u5bSu4E" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -62,8 +62,7 @@
                     <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link portfolio-link" data-toggle="modal" href="#loginModel">
-                    Login</a>
+                    <a class="navbar-brand js-scroll-trigger"  href="http://dinautofrakt.se/freightform"><p>Logga in</p></a>
                 </li>
             </ul>
         </div>
@@ -502,7 +501,7 @@
                                         </div>
                                         <div class="clearfix"></div>
                                         <div class="col-lg-12 text-center">
-                                            <button id="loginButton" class="btn btn-primary text-uppercase" type="submit">Logga in</button>
+                                            <button id="loginButton" class="btn btn-primary text-uppercase" type="submit" href="/freightform">Logga in</button>
                                         </div>
                                     </div>
                                 </form>

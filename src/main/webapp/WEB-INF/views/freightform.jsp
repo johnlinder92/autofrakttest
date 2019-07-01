@@ -7,7 +7,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html lang="en">
+<html>
 <head>
     <title>Freightform</title>
 
@@ -41,7 +41,7 @@
     <div class="container" >
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><p>DinAUTOFRAKT</p></a>
 
-        <a id="loggaut" class="navbar-brand js-scroll-trigger" href="#page-top"><p>Logga ut</p></a>
+        <a id="loggaut" class="navbar-brand js-scroll-trigger" href="http://dinautofrakt.se"><p>Logga ut</p></a>
 
 
 
@@ -65,6 +65,14 @@
 
 
 <style>
+    html,body
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
 
     .intro-text {
         padding-top: 200px
@@ -105,29 +113,29 @@
     }
 </style>
 
-<form link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" class="form-inline">
+<form link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" class="form-inline" id="fraktformulär">
 
      <span> <h2 id="ner" style="margin-right:35px">Vart ska din försändelse åka? </h2></span>
     <div class="clear"></div>
 <br/>
 
         <label for="postalfrom">Från:   </label>
-        <input type="postalfrom" class="form-control"  placeholder="postkod" id="postalfrom" value="17266">
+        <input type="postalfrom" class="form-control" name="Postalfrom" placeholder="postkod" id="postalfrom" value="17266">
         <label for="postalto"></label>
-        <input type="postalto" class="form-control"  placeholder="Till postkod" id="postalto">
+        <input type="postalto" class="form-control" name="Postalto" placeholder="Till postkod" id="postalto">
 
 
 <br/>
 <span>
          <label for="weight" class="form-control">Paket 1:</label>
-        <input  type="weight" class="form-control" placeholder="Vikt i kg" id="weight">
+        <input  type="weight" name="weight" class="form-control" placeholder="Vikt i kg" id="weight">
 
-        <input type="height" class="form-control"  placeholder="Höjd i cm" id="height">
+        <input type="height" name="height" class="form-control"  placeholder="Höjd i cm" id="height">
 
-        <input type="length" class="form-control" placeholder="Längd i cm" id="lenght">
+        <input type="length" name="length" class="form-control" placeholder="Längd i cm" id="lenght">
 
-        <input type="width" class="form-control" placeholder="Bredd i cm" id="width">
-        <button style="border-color: #bcbf50" type="Hitta billigast pris" class="btn btn-default">Hitta billigast pris</button>
+        <input type="width" name= "width" class="form-control" placeholder="Bredd i cm" id="width">
+        <button type="submit" form="fraktformulär" style="border-color: #bcbf50" type="Hitta billigast pris" class="btn btn-default">Hitta billigast pris</button>
 </span>
     <div id="counter"><p><script type="text/javascript">
  //       document.write(count)
@@ -136,11 +144,11 @@
 
     </div>
 
-</form>
 
-        <button  style="margin-right:1400px; margin-bottom:25px; border-color: #005cbf " type="Duplicera/fler paket"  id="nyPaket" class="btn btn-default">Duplicera</button>
 
-</div>
+
+
+
 <script>
 
 
@@ -148,16 +156,16 @@
         $('#nyPaket').click(function(){
             var newDiv = $( "<div class='form-group' >\n" +
                 "        <label for=\"weight1\">Paket :</label>\n" + ++count +
-                "        <label for=\"weight1\">Vikt i KG:</label>\n" +
-                "        <input type=\"weight1\" value=\" " + (document.getElementById("weight").value) +"\"  class=\"form-control\" placeholder=\"weight1\" id=\"weight1\">\n" +
-                "        <label for=\"height1\">Höjd(cm)</label>\n" +
-                "        <input type=\"height1\" value=\" " + (document.getElementById("height").value) +"\" class=\"form-control\" placeholder=\"height\" id=\"height1\">\n" +
+                "        <label style= margin-left:50px for=\"weight1\">Vikt i KG:</label>\n" +
+                "        <input type=\"weight1\" name=\"weight2\" value=\" " + (document.getElementById("weight").value) +"\"  class=\"form-control\" placeholder=\"weight1\" id=\"weight1\">\n" +
+                "        <label  for=\"height1\">Höjd(cm)</label>\n" +
+                "        <input type=\"height1\" name=\"height2\" value=\" " + (document.getElementById("height").value) +"\" class=\"form-control\" placeholder=\"height\" id=\"height1\">\n" +
                 "        <label  for=\"lenght1\">Längd(cm)</label>\n" +
-                "        <input type=\"length1\" value=\" " + (document.getElementById("lenght").value) +"\" class=\"form-control\" placeholder=\"lenght\" id=\"lenght1\">\n" +
+                "        <input type=\"length1\" name=\"length2\" value=\" " + (document.getElementById("lenght").value) +"\" class=\"form-control\" placeholder=\"lenght\" id=\"lenght1\">\n" +
                 "        <label for=\"width1\">Bredd(cm)</label>\n" +
-                "        <input type=\"width1\" value=\" " + (document.getElementById("width").value) +"\" class=\"form-control\" placeholder=\"width\" id=\"width1\">\n" +
+                "        <input type=\"width1\" name=\"width2\" value=\" " + (document.getElementById("width").value) +"\" class=\"form-control\" placeholder=\"width\" id=\"width1\">\n" +
                 "        </div> "  );
-            $('body').append(newDiv).html();
+            $('form').append(newDiv).html();
         });
     });
     $( "body" ).on( "click", "button", function() {
@@ -167,6 +175,106 @@
     });
 
 </script>
+
+
+<button  style="margin-right:1400px; margin-bottom:25px; border-color: #005cbf " type=button  id="nyPaket" class="btn btn-default">Duplicera</button>
+</div>
+
+<script>
+
+    /**
+     * Retrieves input data from a form and returns it as a JSON object.
+     * @param  {HTMLFormControlsCollection} elements  the form elements
+     * @return {Object}                               form data as an object literal
+     */
+    const formToJSON = elements => [].reduce.call(elements, (data, element) => {
+
+        data[element.name] = element.value;
+        return data;
+
+    }, {});
+
+    const handleFormSubmit = event => {
+
+        // Stop the form from submitting since we’re handling that with AJAX.
+        event.preventDefault();
+
+        // Call our function to get the form data.
+        const data = formToJSON(form.elements);
+
+        // Demo only: print the form data onscreen as a formatted JSON object.
+        const dataContainer = document.querySelectorAll('.form-inline,.form-group,.form-control')[0];
+
+        // Use `JSON.stringify()` to make the output valid, human-readable JSON.
+        dataContainer.textContent = JSON.stringify(data, null, "  ");
+
+        // ...this is where we’d actually do something with the form data...
+    };
+
+    const form = document.querySelectorAll('.form-inline,.form-group,.form-control')[0];
+    form.addEventListener('submit', handleFormSubmit);
+
+
+</script>
+
+</form>
+
+
+<!-- Contact -->
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading text-uppercase">Kontakta oss</h2>
+                <h3 class="section-subheading text-muted"> Mejla till info@dinautofrakt.se vid problem </h3>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; Dinautofrakt.se 2019</span>
+            </div>
+            <%-- <div class="col-md-4">
+                 <ul class="list-inline social-buttons">
+                     <li class="list-inline-item">
+                         <a href="#">
+                             <i class="fab fa-twitter"></i>
+                         </a>
+                     </li>
+                     <li class="list-inline-item">
+                         <a href="#">
+                             <i class="fab fa-facebook-f"></i>
+                         </a>
+                     </li>
+                     <li class="list-inline-item">
+                         <a href="#">
+                             <i class="fab fa-linkedin-in"></i>
+                         </a>
+                     </li>
+                 </ul>
+             </div>--%>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li class="list-inline-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
 
 <script src="resources/vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="resources/js/agency.min.js"></script>
