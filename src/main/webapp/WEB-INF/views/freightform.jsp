@@ -17,7 +17,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-        var count = 1;
+
+
+    var count = 1;
+        /*function removeElement(count) {
+
+
+                $('#tabort').click(function(){
+            document.getElementById(#count).remove();
+        });}*/
     </script>
 
     <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +42,7 @@
 
 </head>
 
-<body id="page-top">
+<div id="page-top">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
@@ -113,7 +121,7 @@
     }
 </style>
 
-<form link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" class="form-inline" id="fraktformulär">
+<form link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" class="form-inline" id="parent">
 
      <span> <h2 id="ner" style="margin-right:35px">Vart ska din försändelse åka? </h2></span>
     <div class="clear"></div>
@@ -135,10 +143,12 @@
         <input type="length" name="length" class="form-control" placeholder="Längd i cm" id="lenght">
 
         <input type="width" name= "width" class="form-control" placeholder="Bredd i cm" id="width">
-        <button type="submit" form="fraktformulär" style="border-color: #bcbf50" type="Hitta billigast pris" class="btn btn-default">Hitta billigast pris</button>
-</span>
-    <div id="counter"><p><script type="text/javascript">
- //       document.write(count)
+        <button type="submit" form="parent" style="border-color: #bcbf50" type="Hitta billigast pris" class="btn btn-default">Hitta billigast pris</button>
+    </span>
+    <div id="counter"><p>
+
+        <script type="text/javascript">
+
     </script></p>
 
 
@@ -152,33 +162,48 @@
 <script>
 
 
+    function removeElement(counter) {
+
+
+
+    }
+
+
     $(function() {
-        $('#nyPaket').click(function(){
-            var newDiv = $( "<div class='form-group' >\n" +
-                "        <label for=\"weight1\">Paket :</label>\n" + ++count +
+        $('#nyPaket').click(function () {
+            var newDiv = $("<div id=\"" + count + "\" class='form-group' >\n" +
+                "        <label  for=\"paketID\">Paket :</label>\n" + ++count +
                 "        <label style= margin-left:50px for=\"weight1\">Vikt i KG:</label>\n" +
-                "        <input type=\"weight1\" name=\"weight2\" value=\" " + (document.getElementById("weight").value) +"\"  class=\"form-control\" placeholder=\"weight1\" id=\"weight1\">\n" +
+                "        <input type=\"weight1\" name=\"Weight" + count + "\"   value=\" " + (document.getElementById("weight").value) + "\"  class=\"form-control\" placeholder=\"weight1\" id=\"weight1\">\n" +
                 "        <label  for=\"height1\">Höjd(cm)</label>\n" +
-                "        <input type=\"height1\" name=\"height2\" value=\" " + (document.getElementById("height").value) +"\" class=\"form-control\" placeholder=\"height\" id=\"height1\">\n" +
+                "        <input type=\"height1\" name=\"Height" + count + "\" value=\" " + (document.getElementById("height").value) + "\" class=\"form-control\" placeholder=\"height\" id=\"height1\">\n" +
                 "        <label  for=\"lenght1\">Längd(cm)</label>\n" +
-                "        <input type=\"length1\" name=\"length2\" value=\" " + (document.getElementById("lenght").value) +"\" class=\"form-control\" placeholder=\"lenght\" id=\"lenght1\">\n" +
+                "        <input type=\"length1\" name=\"Length" + count + "\" value=\" " + (document.getElementById("lenght").value) + "\" class=\"form-control\" placeholder=\"lenght\" id=\"lenght1\">\n" +
                 "        <label for=\"width1\">Bredd(cm)</label>\n" +
-                "        <input type=\"width1\" name=\"width2\" value=\" " + (document.getElementById("width").value) +"\" class=\"form-control\" placeholder=\"width\" id=\"width1\">\n" +
-                "        </div> "  );
+                "        <input type=\"width1\" name=\"Width" + count + "\" value=\" " + (document.getElementById("width").value) + "\" class=\"form-control\" placeholder=\"width\" id=\"width1\">\n" +
+                "         <button type=\"button\" id=\"tabort\" onclick=\"removeElement(count)\"  style=\"border-color: #bf161b\" type=\"Ta bort\" class=\"btn btn-dark\">Ta bort</button></div> ");
             $('form').append(newDiv).html();
+
         });
+        $("body").on("click", "button", function () {
+            $(this)("\n" + "" +
+                (document.getElementById("counter").innerHTML = "Totala antalet paket = " + count) + ""
+            );
+        });
+
     });
-    $( "body" ).on( "click", "button", function() {
-        $(this)("\n" + "" +
-            (document.getElementById("counter").innerHTML = "Totala antalet paket = " + count) + ""
-        );
-    });
+
+
+
+
+
 
 </script>
 
 
-<button  style="margin-right:1400px; margin-bottom:25px; border-color: #005cbf " type=button  id="nyPaket" class="btn btn-default">Duplicera</button>
-</div>
+    <button  style="margin-right:1400px; margin-bottom:25px; border-color: #005cbf; margin-top:5px; " onclick="updatecounter()" type=button  id="nyPaket" class="btn btn-default">Duplicera</button>
+
+
 
 <script>
 
@@ -219,7 +244,7 @@
 
 </form>
 
-
+</div>
 <!-- Contact -->
 <section class="page-section" id="contact">
     <div class="container">
