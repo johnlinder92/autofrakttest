@@ -162,17 +162,17 @@
 
             $(function() {
                 $('#nyPaket').click(function () {
-                    var newDiv = $(" <tr class= 'form-inline'> <div id=\"ID:" + count + "\" class='form-group'  >\n" +
-                        "       <td> <label  for=\"paketID\">Paket : </label>\n" + ++count +
-                        "        <td><label style= margin-left:50px for=\"weight1\">Vikt i KG:</label>\n" +
-                        "        <input type=\"weight1\" name=\"Weight" + count + "\"   value=\" " + (document.getElementById("weight").value) + "\"  class=\"form-control\" placeholder=\"weight1\" id=\"weight1\"></td>\n" +
-                        "        <td> <label  for=\"height1\">Höjd(cm)</label>\n" +
-                        "        <input type=\"height1\" name=\"Height" + count + "\" value=\" " + (document.getElementById("height").value) + "\" class=\"form-control\" placeholder=\"height\" id=\"height1\"></td>\n" +
-                        "        <td> <label  for=\"lenght1\">Längd(cm)</label>\n" +
-                        "        <input type=\"length1\" name=\"Length" + count + "\" value=\" " + (document.getElementById("lenght").value) + "\" class=\"form-control\" placeholder=\"lenght\" id=\"lenght1\"></td>\n" +
-                        "        <td> <label for=\"width1\">Bredd(cm)</label>\n" +
-                        "        <input type=\"width1\" name=\"Width" + count + "\" value=\" " + (document.getElementById("width").value) + "\" class=\"form-control\" placeholder=\"width\" id=\"width1\"></td>\n" +
-                        "         <td><button type=\"button\" id=\"tabort\"   style=\"border-color: #bf161b; background: white; float: bottom; \" type=\"Ta bort\" class=\"delete-row\">Ta bort</button></div></td> </tr>");
+                    var newDiv = $(" <tr> <div id=\"ID:" + count + "\" class='form-group'  >\n" +
+                        "       <td class= 'form-inline'> <label  for=\"paketID\">Paket : </label>\n" + ++count +
+                        "        <label style= margin-left:50px for=\"weight1\">Vikt i KG:</label>\n" +
+                        "        <input type=\"weight1\" name=\"Weight" + count + "\"   value=\" " + (document.getElementById("weight").value) + "\"  class=\"form-control\" placeholder=\"weight1\" id=\"weight1\">\n" +
+                        "        <label  for=\"height1\">Höjd(cm)</label>\n" +
+                        "        <input type=\"height1\" name=\"Height" + count + "\" value=\" " + (document.getElementById("height").value) + "\" class=\"form-control\" placeholder=\"height\" id=\"height1\">\n" +
+                        "        <label  for=\"lenght1\">Längd(cm)</label>\n" +
+                        "        <input type=\"length1\" name=\"Length" + count + "\" value=\" " + (document.getElementById("lenght").value) + "\" class=\"form-control\" placeholder=\"lenght\" id=\"lenght1\">\n" +
+                        "        <label for=\"width1\">Bredd(cm)</label>\n" +
+                        "        <input type=\"width1\" name=\"Width" + count + "\" value=\" " + (document.getElementById("width").value) + "\" class=\"form-control\" placeholder=\"width\" id=\"width1\">\n" +
+                        "        <button type=\"button\" id=\"tabort\"   style=\"border-color: #bf161b; background: white; float: bottom; \" type=\"Ta bort\" class=\"delete-row\">Ta bort</button></div></td> </tr>");
                     $('form').append(newDiv).html();
                 });
                 $("body").on("click", "button", function () {
