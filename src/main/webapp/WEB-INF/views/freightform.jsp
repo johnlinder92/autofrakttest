@@ -116,8 +116,16 @@
 
         <label for="postalfrom">Från:   </label>
         <input type="postalfrom" class="form-control" name="Postalfrom" placeholder="postkod" id="postalfrom" value="17266">
-        <label for="postalto"></label>
-        <input type="postalto" class="form-control" name="Postalto" placeholder="Till postkod" id="postalto">
+        <label for="postalto">Till: </label>
+
+        <select name="country">
+        <option value="Sverige">Sverige</option>
+        <option value="Patrick">Patrick</option>
+        <option value="Noel">Noel</option>
+        <option value="Oskar">Oskar</option>
+    </select>
+
+        <input type="postalto" class="form-control" name="Postalto" placeholder="Postkod" id="postalto">
 
 
         <br/>
