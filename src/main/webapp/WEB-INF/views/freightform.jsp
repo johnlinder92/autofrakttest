@@ -114,18 +114,44 @@
         <div class="clear"></div>
         <br/>
 
-        <label for="postalfrom">Från:   </label>
+        <label for="postalfrom">Från Postkod:   </label>
         <input type="postalfrom" class="form-control" name="Postalfrom" placeholder="postkod" id="postalfrom" value="17266">
-        <label for="postalto">Till: </label>
+        <label for="postalto">Till Land: </label>
 
         <select name="country">
-        <option value="Sverige">Sverige</option>
-        <option value="Patrick">Patrick</option>
-        <option value="Noel">Noel</option>
-        <option value="Oskar">Oskar</option>
+        <option value="SE">Sverige</option>
+        <option value="BE">Belgien</option>
+        <option value="BG">Bulgarien</option>
+            <option value="CY">Cypern</option>
+            <option value="DK">Danmark</option>
+            <option value="EE">Estland</option>
+            <option value="FI">Finland</option>
+            <option value="FR">Frankrike</option>
+            <option value="EL">Grekland</option>
+            <option value="IE">Irland</option>
+            <option value="IT">Italien</option>
+            <option value="HR">Kroatien</option>
+            <option value="LV">Lettland</option>
+            <option value="LT">Litauen</option>
+            <option value="LU">Luxemburg</option>
+            <option value="MT">Malta</option>
+            <option value="NL">Nederländerna</option>
+            <option value="PL">Polen</option>
+            <option value="PT">Portugal</option>
+            <option value="RO">Rumänien</option>
+            <option value="SK">Slovakien</option>
+            <option value="SI">Slovenien</option>
+            <option value="ES">Spanien</option>
+            <option value="UK">Storbritannien</option>
+            <option value="CZ">Tjeckien</option>
+            <option value="DE">Tyskland</option>
+            <option value="HU">Ungern</option>
+            <option value="AT">Österrike</option>
+
+
     </select>
 
-        <input type="postalto" class="form-control" name="Postalto" placeholder="Postkod" id="postalto">
+        <input type="postalto" class="form-control" name="Postalto" placeholder="Till Postkod" id="postalto">
 
 
         <br/>
