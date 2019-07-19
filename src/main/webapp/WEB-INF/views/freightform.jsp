@@ -69,6 +69,11 @@
 
 
     <style>
+
+        .masthead{
+            height:250px;
+
+        }
         html,body
         {
             width: 100%;
