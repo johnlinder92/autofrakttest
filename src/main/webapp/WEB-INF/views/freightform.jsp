@@ -110,7 +110,7 @@
 
     <form link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" class="form-inline" id="parent">
 
-        <span> <h2 id="ner" style="margin-right:35px">Vart ska din försändelse åka? </h2></span>
+        <span> <h2 id="ner" style="margin-right:35px; font-size: 165%;">Vart ska din försändelse åka? </h2></span>
         <div class="clear"></div>
         <br/>
 
@@ -181,13 +181,14 @@
 
         <script>
             var count2=1;
-
+            count2.toString().bold().fontcolor("green");
 
 
             $(document).on('click','.delete-row', function(){
 
                 $(this).parents('tr').remove();
-                document.getElementById("counter").innerHTML ="Totala antalet paket = " + --count2 + ""
+                --count2
+                document.getElementById("counter").innerHTML ="Totala antalet paket = " + count2.toString().bold().fontcolor("red").fontsize(5); + ""
 
             });
 
@@ -211,7 +212,7 @@
                 });
                 $("body").on("click", "button", function () {
                     $(this)("\n" + "" +
-                        (document.getElementById("counter").innerHTML = "Totala antalet paket = " + count2) + ""
+                        (document.getElementById("counter").innerHTML = "Totala antalet paket = " +  count2.toString().bold().fontcolor("red").fontsize(5) ) + ""
                     );
                 });
             });
