@@ -110,7 +110,7 @@
 
     <form link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" class="form-inline" id="parent">
 
-        <span> <h2 id="ner" style="margin-right:35px; font-size: 165%;">Vart ska din försändelse åka? </h2></span>
+        <span> <h2 id="ner" style="margin-right:35px; font-size: 155%;">Vart ska din försändelse åka? </h2></span>
         <div class="clear"></div>
         <br/>
 
@@ -118,7 +118,7 @@
         <input type="postalfrom" class="form-control" name="Postalfrom" placeholder="postkod" id="postalfrom" value="17266">
         <label for="postalto">Till Land: </label>
 
-        <select name="country">
+        <select name="country" class="form-control">
         <option value="SE">Sverige</option>
         <option value="BE">Belgien</option>
         <option value="BG">Bulgarien</option>
