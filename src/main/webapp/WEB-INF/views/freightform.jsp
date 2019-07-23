@@ -115,18 +115,18 @@
 
     <form link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" class="form-inline" id="parent">
 
-        <span> <h2 id="ner" style="margin-right:35px; font-size: 155%;">Vart ska din försändelse åka? </h2></span>
+        <span> <h2 id="ner" style="margin-right:35px; font-size: 155%;">Vart ska ditt paket åka? &nbsp&nbsp&nbsp&nbsp&nbsp</h2></span>
         <div class="clear"></div>
         <br/>
 
-        <label for="postalfrom">Från Postkod:   </label>
+        <label for="postalfrom"><b style="color:#000000; font-size:130%;">Från</b>&nbsp  Postkod:   </label>
         <input type="postalfrom" class="form-control" name="Postalfrom" placeholder="postkod" id="postalfrom" value="17266">
-        <label for="postalto">Till Land: </label>
+        <label for="postalto"><b style="color:#000000;font-size:130%;">Till</b>&nbsp  Land: </label>
 
         <select name="country" class="form-control">
-        <option value="SE">Sverige</option>
-        <option value="BE">Belgien</option>
-        <option value="BG">Bulgarien</option>
+            <option value="SE">Sverige</option>
+            <option value="BE">Belgien</option>
+            <option value="BG">Bulgarien</option>
             <option value="CY">Cypern</option>
             <option value="DK">Danmark</option>
             <option value="EE">Estland</option>
@@ -154,14 +154,14 @@
             <option value="AT">Österrike</option>
 
 
-    </select>
+        </select>
 
         <input type="postalto" class="form-control" name="Postalto" placeholder="Till Postkod" id="postalto">
 
 
         <br/>
         <span>
-         <label for="weight" class="form-control">Paket 1:</label>
+            <label for="weight" class="form-control"><b>Paket 1:</b></label>
         <input  type="weight" name="weight" class="form-control" placeholder="Vikt i kg" id="weight">
 
         <input type="height" name="height" class="form-control"  placeholder="Höjd i cm" id="height">
@@ -169,7 +169,7 @@
         <input type="length" name="length" class="form-control" placeholder="Längd i cm" id="lenght">
 
         <input type="width" name= "width" class="form-control" placeholder="Bredd i cm" id="width">
-        <button type="submit" form="parent" style="border-color: #14bf23; border-width: thick;" type="Hitta billigast pris" class="btn btn-default">Hitta billigast pris</button>
+        <button type="submit" form="parent" style="border-color: #000000;" type="Hitta billigast pris" class="btn btn-default">Hitta billigast pris</button>
     </span>
         <div id="counter"><p>
 
@@ -193,7 +193,7 @@
 
                 $(this).parents('tr').remove();
                 --count2
-                document.getElementById("counter").innerHTML ="Totala antalet paket = " + count2.toString().bold().fontcolor("red").fontsize(5); + ""
+                document.getElementById("counter").innerHTML ="Totala antalet paket = " + count2.toString().bold().fontsize(5); + ""
 
             });
 
@@ -217,14 +217,14 @@
                 });
                 $("body").on("click", "button", function () {
                     $(this)("\n" + "" +
-                        (document.getElementById("counter").innerHTML = "Totala antalet paket = " +  count2.toString().bold().fontcolor("red").fontsize(5) ) + ""
+                        (document.getElementById("counter").innerHTML = "Totala antalet paket = " +  count2.toString().bold().fontsize(5) ) + ""
                     );
                 });
             });
         </script>
 
 
-        <button  style="margin-right:1400px; margin-bottom:25px; border-color: #005cbf; margin-top:5px; border-width: thick; " onclick="count2++" type=button  id="nyPaket" class="btn btn-default">Duplicera</button>
+        <button style="margin-right:1400px; margin-bottom:25px; border-color: #000000; margin-top:5px; " onclick="count2++" type=button id="nyPaket" class="btn btn-default">Duplicera</button>
 
 
 
