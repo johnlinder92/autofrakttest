@@ -1,5 +1,6 @@
 package com.aws.codestar.projecttemplates.configuration;
 
+import com.aws.codestar.projecttemplates.controller.LoginControler;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -15,6 +16,7 @@ import com.aws.codestar.projecttemplates.controller.HelloWorldController;
 @Configuration
 @ComponentScan({ "com.aws.codestar.projecttemplates.configuration" })
 @PropertySource("classpath:application.properties")
+
 public class ApplicationConfig {
 
     /**
@@ -27,6 +29,7 @@ public class ApplicationConfig {
     public HelloWorldController helloWorld() {
         return new HelloWorldController(this.siteName);
     }
+
 
     /**
      * Required to inject properties using the 'Value' annotation.

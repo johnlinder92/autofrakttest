@@ -62,7 +62,7 @@
                     <a class="nav-link js-scroll-trigger" href="#contact">Kontakt</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-brand js-scroll-trigger"  href="http://dinautofrakt.se/freightform"><p>Logga in</p></a>
+                    <a class="nav-link portfolio-link" data-toggle="modal" href="#loginModel"><p>Logga in</p></a>
                 </li>
             </ul>
         </div>
@@ -212,25 +212,7 @@
             <div class="col-md-4">
                 <span class="copyright">Copyright &copy; Dinautofrakt.se 2019</span>
             </div>
-           <%-- <div class="col-md-4">
-                <ul class="list-inline social-buttons">
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>--%>
+
             <div class="col-md-4">
                 <ul class="list-inline quicklinks">
                     <li class="list-inline-item">
@@ -245,7 +227,7 @@
     </div>
 </footer>
 
-<%--<!-- Login Modal -->
+<!-- Login Modal -->
 <div class="portfolio-modal modal fade" id="loginModel" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -261,21 +243,21 @@
                             <div class="login-page">
                                 <h2 class="text-uppercase">autofrakt -Priskollen</h2>
                             <p class="item-intro text-muted">Logga in.<br>Logga in för att komma åt priskollen, Kontakta oss i formuläret om ni är intresserad.</p>
-                                <form id="loginForm" name="sentMessage" novalidate="novalidate">
+                                <form action="LoginController" id="loginForm" name="sentMessage" novalidate="novalidate" method="post">
                                     <div class="row">
                                         <div class="col-lg-12 text-center">
                                             <div class="form-group">
-                                                <label for="username"></label><input class="form-control" id="username" type="text" placeholder="Ditt användarnamn *" required="required" data-validation-required-message="Please enter your username.">
+                                                <label for="username"></label><input class="form-control" id="username" name="username" type="text" placeholder="Ditt användarnamn *" required="required" data-validation-required-message="Please enter your username.">
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                             <div class="form-group">
-                                                <label for="password"></label><input class="form-control" id="password" type="tel" placeholder="Ditt lösenord *" required="required" data-validation-required-message="Please enter your password.">
+                                                <label for="password"></label><input class="form-control"  id="password" name="password" type="password" placeholder="Ditt lösenord *" required="required" data-validation-required-message="Please enter your password.">
                                                 <p class="help-block text-danger"></p>
                                             </div>
                                         </div>
                                         <div class="clearfix"></div>
                                         <div class="col-lg-12 text-center">
-                                            <button id="loginButton" class="btn btn-primary text-uppercase" type="submit" href="/freightform">Logga in</button>
+                                            <button id="loginButton" class="btn btn-primary text-uppercase" type="submit">Logga in</button>
                                         </div>
                                     </div>
                                 </form>
@@ -290,7 +272,7 @@
         </div>
     </div>
 </div>
-</div>--%>
+</div>
 
 
 

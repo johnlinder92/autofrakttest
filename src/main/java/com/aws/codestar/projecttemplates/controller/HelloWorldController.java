@@ -24,14 +24,16 @@ public class HelloWorldController {
         mav.addObject("siteName", this.siteName);
         return mav;
     }
-    @RequestMapping("/login")
-    public ModelAndView index(){
-        ModelAndView mav = new ModelAndView("index");
-        return mav;
-    }
+
     @RequestMapping("/freightform")
     public ModelAndView freightform(){
         ModelAndView mav1 = new ModelAndView("freightform");
+        return mav1;
+    }
+
+    @RequestMapping("/index")
+    public ModelAndView index(){
+        ModelAndView mav1 = new ModelAndView("index");
         return mav1;
     }
 }
