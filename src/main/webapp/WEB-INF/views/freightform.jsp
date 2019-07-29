@@ -13,6 +13,8 @@
 
     <title>Freightform</title>
 
+
+
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <meta http-equiv="content-type" content="text/html" charset="ISO-8859-1"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,9 +22,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="resources/js/freightform.js"></script>
 
-    <script type="text/javascript">
-        var count = 1;
-    </script>
 
     <link href="resources/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -45,7 +44,7 @@
         <div class="container" >
             <a class="navbar-brand js-scroll-trigger" href="#page-top"><p>DinAUTOFRAKT</p></a>
 
-            <a id="loggaut" class="navbar-brand js-scroll-trigger" href="http://dinautofrakt.se"><p>Logga ut</p></a>
+            <a style="color:white;" class="nav-link js-scroll-trigger" data-toggle="modal" href="index"><p>Logga ut</p></a>
 
 
 
@@ -76,10 +75,9 @@
         <div class="clear"></div>
         <br/>
 
-        <label for="postalfrom"><b style="color:#000000; font-size:130%;">Från</b>&nbsp  Postkod:   </label>
+        <label for="postalfrom"><b style="color:#000000; font-size:130%; float:left;">Från:</b>&nbsp&nbsp<div id="postkod">    Postkod   </div>  </label>
         <input type="postalfrom" class="form-control" name="Postalfrom" placeholder="postkod" id="postalfrom" value="17266">
-        <label for="postalto"><b style="color:#000000;font-size:130%;">Till</b>&nbsp  Land: </label>
-
+        <label for="postalto"><b style="color:#000000;font-size:130%; float:left;">Till:</b>&nbsp&nbsp<div id="land">   Land </div>   </label>
         <select name="country" class="form-control">
             <option value="SE">Sverige</option>
             <option value="BE">Belgien</option>
@@ -119,20 +117,16 @@
         <br/>
         <span>
             <label for="weight" class="form-control"><b>Paket 1:</b></label>
-        <input  type="weight" name="weight" class="form-control" placeholder="Vikt i kg" id="weight">
+        <input  type="text" name="weight" class="form-control" placeholder="Vikt i kg" id="weight">
 
-        <input type="height" name="height" class="form-control"  placeholder="Höjd i cm" id="height">
+        <input type="text" name="height" class="form-control"  placeholder="Höjd i cm" id="height">
 
-        <input type="length" name="length" class="form-control" placeholder="Längd i cm" id="lenght">
+        <input type="text" name="length" class="form-control" placeholder="Längd i cm" id="lenght">
 
-        <input type="width" name= "width" class="form-control" placeholder="Bredd i cm" id="width">
+        <input type="text" name= "width" class="form-control" placeholder="Bredd i cm" id="width">
         <button type="submit" form="parent" style="border-color: #000000;" type="Hitta billigast pris" class="btn btn-default">Hitta billigast pris</button>
     </span>
         <div id="counter"><p>
-
-            <script type="text/javascript">
-            </script></p>
-
 
         </div>
 
@@ -150,8 +144,11 @@
 
 
     </form>
-
+    <button name="buttonTest"   href="http://dinautofrakt.se/response1" id="buttonTest"  style="border-color: #000000;"  class="btn btn-default">Test</button>
+    <div id="ajaxGetUserServletResponse"><p> Här kommer det. </p></div>
 </div>
+
+
 <!-- Contact -->
 <section class="page-section" id="contact">
     <div class="container">
@@ -206,6 +203,7 @@
         </div>
     </div>
 </footer>
+
 
 
 <script src="resources/vendor/jquery-easing/jquery.easing.min.js"></script>
