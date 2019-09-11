@@ -14,6 +14,7 @@
           <element id="module-output" name="autofrakt00" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.toedter:jcalendar:1.4" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:5.0.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.0.7.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-core:5.0.7.RELEASE" />
