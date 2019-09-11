@@ -1,8 +1,11 @@
 package com.aws.codestar.projecttemplates.controller;
 
+import com.aws.codestar.projecttemplates.LoginRegisterpopup.LoginForm2;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 /**
@@ -11,6 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/")
 public class HelloWorldController {
+
 
     private final String siteName;
 
@@ -36,4 +40,19 @@ public class HelloWorldController {
         ModelAndView mav1 = new ModelAndView("index");
         return mav1;
     }
-}
+
+    @GetMapping("/loggain")
+
+
+        public ModelAndView loggain(){
+
+        ModelAndView mav1 = new ModelAndView("index");
+
+        LoginForm2 login = new LoginForm2();
+            login.run();
+
+return mav1;
+
+        }}
+
+
